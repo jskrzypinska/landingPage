@@ -1,0 +1,264 @@
+/* main - formatting for everyone*/
+
+body {
+  background-color: #436984;
+  font-family: "Lato", sans-serif;
+}
+
+main {
+  font-family: "Lato", sans-serif;
+  display: block;
+  max-width: 600px;
+  margin: 0 auto;
+  background-color: white;
+}
+
+/* main-end */
+/* instruction */
+.modal,
+.nick-modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0); /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-fill {
+  background-color: #fefefe;
+  top: -80px;
+  margin: auto;
+  border: 5px solid #436984;
+  width: 600px;
+  height: 730px;
+  text-align: center;
+  position: relative;
+  padding-top: 80px;
+}
+.modal-fill > p {
+  font-size: 28px;
+}
+.modal-fill > img {
+  width: 80%;
+}
+.modal-fill > h2 {
+  font-size: 30px;
+  padding-top: 40px;
+}
+.modal-fill > div > button {
+  width: 30%;
+  font-size: 20px;
+  cursor: pointer;
+  margin: 10px 20px 10px 20px;
+  padding: 10px;
+}
+#i-buttons {
+  display: flex;
+  margin: 10px 20px 10px 20px;
+}
+
+.modal-fill2 {
+  position: relative;
+  background-color: #fefefe;
+  top: -80px;
+  margin: auto;
+  border: 5px solid #436984;
+  width: 600px;
+  height: 730px;
+  text-align: center;
+}
+.modal-fill2 p {
+  font-size: 30px;
+  margin-top: 230px;
+}
+
+#easy-btn,
+#hard-btn {
+  font-size: 30px;
+  margin: 15px;
+  padding: 15px;
+}
+
+.modal-fill2 {
+  position: relative;
+  background-color: #fefefe;
+  top: -80px;
+  margin: auto;
+  border: 5px solid #436984;
+  width: 600px;
+  height: 730px;
+  text-align: center;
+}
+.modal-fill2 p {
+  font-size: 30px;
+  margin-top: 230px;
+}
+
+#easy-btn,
+#hard-btn {
+  font-size: 30px;
+  margin: 15px;
+  padding: 15px;
+}
+
+/* The Close Button */
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+.control {
+  padding-bottom: 20px;
+  font-size: 28px;
+}
+.control > div {
+  display: flex;
+  justify-content: space-around;
+}
+.control > div > span > img {
+  padding-right: 20px;
+}
+.control > div > span > p {
+  margin-top: 0;
+}
+
+/* instruction-end */
+
+/* score */
+/* hud */
+#hud-item {
+  display: flex;
+}
+.hud-prefix {
+  padding: 20px;
+}
+/* score-end */
+/* level */
+
+/* level-end */
+/* game */
+
+/* game-end */
+
+.scores-modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0); /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+}
+
+.scores-modal-shown {
+  display: block;
+  opacity: 1;
+}
+
+#score-time {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-around;
+  height: 90px;
+}
+
+#score,
+#time {
+  font-size: 25px;
+  width: 130px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+#nav-bar {
+  margin: 0 auto;
+  display: flex;
+  width: 100%;
+  height: 50px;
+  justify-content: space-around;
+}
+#nav-bar > button {
+  width: 110px;
+}
+
+main > h1 {
+  padding-top: 15px;
+  text-align: center;
+  letter-spacing: 3px;
+}
+
+.difficulty-modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0); /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+}
+
+/* Tables
+================================== */
+.Rtable {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 0 1em 0;
+  padding: 0;
+}
+.Rtable h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+.Rtable-cell {
+  box-sizing: border-box;
+  flex-grow: 1;
+  width: 100%; /* Default to full width */
+  padding: 0.8em 1.2em;
+  overflow: hidden; /* // Or flex might break */
+  list-style: none;
+  border: solid 1px lightgray;
+  background: fade(slategrey, 20%);
+}
+
+/* Table column sizing
+================================== */
+.Rtable--2cols > .Rtable-cell {
+  width: 50%;
+}
+.Rtable--3cols > .Rtable-cell {
+  width: 33.33%;
+}
+
+div#nick-modal input {
+  font-size: 24px;
+}

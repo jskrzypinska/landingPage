@@ -1,0 +1,101 @@
+
+.slogan-page .hero-text {
+    /* grid */
+    grid-area: hero-text;
+
+    /* padding-left: 44px; */
+    font-weight: bold;
+    
+}
+.slogan-page .slogan {
+    /* grid */
+    grid-area: slogan;
+
+}
+
+.slogan-page .hero-news {
+    /* grid */
+    grid-area: hero-news;
+    justify-self: end;
+    
+    font-weight: bold;
+
+}
+.slogan-page>a{
+    grid-area: button-newsletter;
+    background-color: rgb(48,128,235);
+    color: white;
+    padding:20px 60px;    
+    border-radius: 40px;
+    text-decoration: none;
+    font: bold 1.5rem Lato, sans-serif;
+  box-shadow: 12px 12px 25px -13px rgba(0,0,0,0.64);
+}
+.slogan-page a:hover {
+    background-color: rgb(13, 102, 208);
+}
+
+.slogan-page{
+    /* background */
+
+    background: 
+        linear-gradient(
+        rgba(44, 68, 84, 0.1),
+        rgba(14, 36, 51, 0.2)
+        ); 
+
+    height: 82vh; /* desktop */ 
+    color: white;
+    font-size: 30px;
+    
+
+    /* grid */
+    display: grid;
+    grid-template-columns: 1fr 2fr 3fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: 
+    "slogan slogan    slogan"
+    "...... hero-text hero-text"
+    "hero-news hero-news button-newsletter";
+
+    /* grid items */
+
+    justify-items: center;
+    align-items: center;
+}
+.slogan-page h1 {
+    font-size: 2.9rem;
+    text-align: center;
+}
+
+
+@media screen and (max-width: 499px) {
+    .slogan-page{
+        /* fonts */
+        font-size: 22px; 
+        text-align: center;
+        height: auto; /* for mobile */ 
+
+        /* background */
+        /* background-image: url(img/background_hero.png); */
+
+        /* grid */
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        grid-template-areas: 
+        "slogan"
+        "hero-news"
+        "button-newsletter"
+        "hero-text"
+        ;
+    }
+    .slogan-page .hero-text {
+        padding: 0;
+        
+    }
+    .slogan-page .hero-news{
+        justify-self: inherit;
+    }
+
+}

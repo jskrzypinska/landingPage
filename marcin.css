@@ -1,0 +1,204 @@
+/******************/
+/* mobile styling */
+/******************/
+nav {
+  display: flex;
+  background: white;
+  text-transform: uppercase;
+  flex-flow: column nowrap;
+  padding: 0px 20px;
+  box-shadow: 0px -10px 10px 10px black;
+}
+nav #icons {
+  display: flex;
+  flex-flow: row nowrap;
+  /* background: red; */
+  justify-content: space-between;
+  width: 100%;
+  height: 100px;
+}
+
+nav .logo {
+  display: flex;
+  width: 100px;
+  justify-content: center;
+}
+nav .logo img {
+  width: 90px;
+}
+
+nav ul {
+  margin-block-start: 0;
+  margin-block-end: 0;
+  flex-flow: column nowrap;
+  width: 100%;
+  list-style-type: none;
+  margin-block-start: 0;
+  margin-block-end: 0;
+  padding-inline-start: 0;
+  text-align: center;
+  justify-content: flex-end;
+  height: 0px;
+  transition: 300ms;
+  overflow: hidden;
+}
+
+.menu-fold {
+  height: 300px;
+  transition: 300ms;
+}
+
+nav ul li a {
+  width: 100%;
+  display: block;
+  text-decoration: none;
+  padding: 22px 0px;
+  font-size: 22px;
+  color: #333;
+}
+
+footer {
+  background: white;
+  color: #777;
+  padding: 40px 20px;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  font-size: 17px;
+  margin-top: 20px;
+}
+
+footer .text {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-around;
+  flex: 1 1;
+}
+
+footer span {
+  display: inline-block;
+  padding-top: 5px;
+}
+
+footer a {
+  color: #777;
+  text-decoration: none;
+  transition: 0.5s;
+}
+footer a:hover {
+  color: #000;
+  transition: 0.5s;
+}
+
+footer .icons {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: flex-start;
+}
+footer .sep {
+  display: none;
+}
+
+footer img {
+  width: 30px;
+  opacity: 0.5;
+  margin: 0px 10px;
+  transition: 0.5s;
+}
+footer a:hover img {
+  opacity: 1;
+  transition: 0.5s;
+}
+
+.terms {
+  background: white;
+  padding: 40px;
+}
+
+#scrollButton {
+  color: #fff;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: #666;
+  padding: 5px 17px 0px 17px;
+  border-radius: 50px;
+  shadow: 10px 10px 10px #333;
+  transition: 0.3s;
+  cursor: pointer;
+  font-size: 40px;
+}
+
+/****************************/
+/* Desktop & laptop styling */
+/****************************/
+
+@media screen and (min-width: 640px) {
+  header {
+    position: fixed;
+    width: 100%;
+    top: 0px;
+  }
+
+  nav {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+  }
+
+  nav #icons {
+    max-width: 130px;
+  }
+  nav ul {
+    flex-flow: row nowrap;
+    max-width: 800px;
+    display: flex;
+    height: 100px;
+  }
+
+  .menu-fold {
+    height: 100px;
+  }
+
+  nav #burger {
+    display: none;
+  }
+
+  nav ul li {
+    min-width: 120px;
+    line-height: 100px;
+  }
+  nav ul li .logo img {
+    display: flex;
+    margin: 0 auto;
+    width: 80px;
+  }
+
+  nav ul li a {
+    font-size: 17px;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+  }
+
+  footer {
+    flex-flow: row nowrap;
+    font-size: 15px;
+    padding: 50px 20px;
+  }
+  footer .sep {
+    display: inline-block;
+  }
+  footer span {
+    padding-top: 0px;
+  }
+
+  footer .text {
+    flex-flow: row nowrap;
+  }
+  footer img {
+    width: 20px;
+    margin: 0px 5px;
+  }
+}
